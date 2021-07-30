@@ -2,6 +2,9 @@ import {useEffect, useState} from "react";
 import {Navbar, Container, Nav, NavDropdown, Modal, Button} from "react-bootstrap";
 import './assets/css/App.css';
 
+// Images
+import Logo from './assets/images/logo.svg'
+
 
 function App() {
     const [show, setShow] = useState(false);
@@ -12,9 +15,11 @@ function App() {
 
             <Navbar className="fixed-top" bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                        <img width="60px" className="img-fluid" src={Logo} alt=""/>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" className="ml-auto">
                         <Nav className="me-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#link">Link</Nav.Link>
