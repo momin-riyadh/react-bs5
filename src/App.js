@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {Navbar, Container, Nav, NavDropdown, Modal, Button} from "react-bootstrap";
-import './App.css';
+import './assets/css/App.css';
 
 
 function App() {
