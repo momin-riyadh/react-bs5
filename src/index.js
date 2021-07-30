@@ -15,8 +15,10 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 /*
- Folder Structure
- https://dev.to/knitesh/react-project-folder-structure-30cm?signin=true
+ *Folder Structure
+ *https://dev.to/knitesh/react-project-folder-structure-30cm?signin=true
+ *https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md
  */
 reportWebVitals();
