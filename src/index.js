@@ -16,7 +16,7 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 /*
- Folder Stracture
+ Folder Structure
  https://dev.to/knitesh/react-project-folder-structure-30cm?signin=true
  */
 reportWebVitals();
