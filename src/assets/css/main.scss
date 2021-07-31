@@ -1,7 +1,8 @@
 /*
 import Bootstrap 5.0.2
  */
-$body-bg:                   #000000;
+$body-bg: #000000;
+$body-color: #ffffff;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
@@ -175,5 +176,64 @@ $body-bg:                   #000000;
 
 .ins-intro-single:hover::after, .ins-intro-single:focus::after {
   opacity: 1;
+}
+
+
+/*============================
+           Small Team
+   ============================*/
+.ins-small-team-area {
+  overflow: hidden;
+  min-height: 1024px;
+  background-image: url("../images/map-bg.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  @media all and (max-width: 768px) {
+    padding: 50px 0;
+  }
+}
+
+.ins-container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.ins-small-team-main {
+  min-height: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media all and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.ins-team-left, .ins-team-right {
+  flex-basis: 23%;
+  @media all and (max-width: 800px) {
+    flex-basis: auto;
+  }
+}
+
+.ins-team-contents {
+  flex-basis: 54%;
+  margin: 0 65px;
+  @media all and (max-width: 800px) {
+    flex-basis: auto;
+    margin: 65px 0;
+  }
+}
+
+.ins-team-contents {
+  p {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.8em;
+    font-weight: normal;
+    margin: 60px 0;
+  }
 }
 

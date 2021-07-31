@@ -7,6 +7,7 @@ import Logo from './assets/images/logo.svg'
 import Banner from "./common/components/Banner";
 import Slider from "./common/components/Slider";
 import Intro from "./common/components/Intro";
+import Team from "./common/components/Team";
 
 
 function App() {
@@ -42,8 +43,11 @@ function App() {
             </Navbar>
 
 
+
+
             <Slider/>
             <Intro/>
+            <Team/>
 
 
         </div>

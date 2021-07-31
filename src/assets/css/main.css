@@ -53,7 +53,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   background-color: #000000;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1928,15 +1928,15 @@ progress {
 .table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #212529;
+  --bs-table-striped-color: #ffffff;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #212529;
+  --bs-table-active-color: #ffffff;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #212529;
+  --bs-table-hover-color: #ffffff;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #ffffff;
   vertical-align: top;
   border-color: #dee2e6;
 }
@@ -2158,7 +2158,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -2178,7 +2178,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
+  color: #ffffff;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
@@ -2199,7 +2199,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #ffffff;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2221,7 +2221,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #ffffff;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -2246,7 +2246,7 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2325,7 +2325,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -2355,7 +2355,7 @@ textarea.form-control-lg {
 }
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #212529;
+  text-shadow: 0 0 0 #ffffff;
 }
 
 .form-select-sm {
@@ -2642,7 +2642,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -2871,7 +2871,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -2890,7 +2890,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: #ffffff;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3424,7 +3424,7 @@ textarea.form-control-lg {
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
-  color: #212529;
+  color: #ffffff;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4379,7 +4379,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: #ffffff;
   text-align: left;
   background-color: #000000;
   border: 0;
@@ -4407,7 +4407,7 @@ textarea.form-control-lg {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
@@ -4785,7 +4785,7 @@ textarea.form-control-lg {
   background-color: #f8f9fa;
 }
 .list-group-item-action:active {
-  color: #212529;
+  color: #ffffff;
   background-color: #e9ecef;
 }
 
@@ -5678,7 +5678,7 @@ textarea.form-control-lg {
 
 .popover-body {
   padding: 1rem 1rem;
-  color: #212529;
+  color: #ffffff;
 }
 
 .carousel {
@@ -7297,7 +7297,7 @@ textarea.form-control-lg {
 }
 
 .text-body {
-  color: #212529 !important;
+  color: #ffffff !important;
 }
 
 .text-muted {
@@ -10839,6 +10839,7 @@ button.ins-g-btn:hover {
   font-size: 40px;
   line-height: 1em;
   font-weight: 700;
+  color: #ffffff;
 }
 @media all and (max-width: 600px) {
   .ins-common-title {
@@ -11001,6 +11002,70 @@ button.ins-g-btn:hover {
 
 .ins-intro-single:hover::after, .ins-intro-single:focus::after {
   opacity: 1;
+}
+
+/*============================
+           Small Team
+   ============================*/
+.ins-small-team-area {
+  overflow: hidden;
+  min-height: 1024px;
+  background-image: url("../images/map-bg.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media all and (max-width: 768px) {
+  .ins-small-team-area {
+    padding: 50px 0;
+  }
+}
+
+.ins-container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.ins-small-team-main {
+  min-height: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (max-width: 800px) {
+  .ins-small-team-main {
+    flex-direction: column;
+  }
+}
+
+.ins-team-left, .ins-team-right {
+  flex-basis: 23%;
+}
+@media all and (max-width: 800px) {
+  .ins-team-left, .ins-team-right {
+    flex-basis: auto;
+  }
+}
+
+.ins-team-contents {
+  flex-basis: 54%;
+  margin: 0 65px;
+}
+@media all and (max-width: 800px) {
+  .ins-team-contents {
+    flex-basis: auto;
+    margin: 65px 0;
+  }
+}
+
+.ins-team-contents p {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.8em;
+  font-weight: normal;
+  margin: 60px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
