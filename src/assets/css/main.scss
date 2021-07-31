@@ -4,6 +4,8 @@ import Bootstrap 5.0.2
 $body-bg:                   #000000;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "common";
+
 /*============================
            Slider Parts
    ============================*/
@@ -36,7 +38,7 @@ $body-bg:                   #000000;
             Intro Area
    ============================*/
 .ins-intro-area {
-  background-image: url("../img/intro-bg.jpg");
+  background-image: url("../images/intro-bg.jpg");
   background-size: cover;
   background-position: bottom center;
   padding-bottom: 175px;

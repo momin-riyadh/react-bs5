@@ -10753,6 +10753,96 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*================================
+      Common Parts for Project
+  ================================*/
+.app-default-btn {
+  align-items: center;
+  justify-content: center;
+}
+
+.app-default-btn {
+  border-radius: 10px;
+  display: flex;
+}
+
+a.ins-g-btn,
+button.ins-g-btn {
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.app-default-btn {
+  display: inline-block;
+  padding: 5px;
+  overflow: hidden;
+  transition: 0.4s;
+  background: #262626;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #262626 0%, #999999 50%, #262626 100%);
+  border-radius: 12px;
+}
+.app-default-btn span {
+  border-radius: 12px;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #000;
+  color: #FFCD30;
+}
+.app-default-btn span i {
+  color: #FFF;
+  margin: 0 10px 0 0;
+  position: relative;
+  left: 0;
+  transition: all 0.5s;
+}
+.app-default-btn:hover {
+  background: linear-gradient(135deg, #262626 0%, #F4C42D 50%, #262626 100%);
+}
+.app-default-btn:hover span i {
+  position: relative;
+  left: -10px;
+  transition: all 0.5s;
+}
+
+a.ins-g-btn,
+button.ins-g-btn {
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: #262626;
+  background-image: linear-gradient(135deg, #262626 0%, #999999 50%, #262626 100%);
+}
+a.ins-g-btn span,
+button.ins-g-btn span {
+  border-radius: 1.6rem;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #ffcd30;
+}
+a.ins-g-btn:hover,
+button.ins-g-btn:hover {
+  background-image: linear-gradient(135deg, #262626 0%, #f4c42d 50%, #262626 100%);
+}
+
+.ins-common-title {
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 700;
+}
+@media all and (max-width: 600px) {
+  .ins-common-title {
+    font-size: 24px;
+  }
+}
+
 /*============================
            Slider Parts
    ============================*/
@@ -10783,7 +10873,7 @@ textarea.form-control-lg {
             Intro Area
    ============================*/
 .ins-intro-area {
-  background-image: url("../img/intro-bg.jpg");
+  background-image: url("../images/intro-bg.jpg");
   background-size: cover;
   background-position: bottom center;
   padding-bottom: 175px;
