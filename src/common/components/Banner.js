@@ -1,8 +1,15 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import WOW from "wowjs";
 
 function Banner() {
+    useEffect(() => {
+        new WOW.WOW({
+            live: false
+        }).init();
+    }, [])
+
     return (
-        <div className="lead">
+        <div className="lead wow fadeInUp">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus amet deleniti doloribus, ducimus
             earum eius et ex expedita minima nulla placeat provident qui, quos rem sed sunt tempore. Dolorum eos et
             molestias, nihil nulla provident quasi? Ab, aperiam distinctio earum quidem quo repudiandae voluptatem?
