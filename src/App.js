@@ -4,6 +4,7 @@ import './assets/css/App.css';
 
 // Images
 import Logo from './assets/images/logo.svg'
+import Banner from "./common/components/Banner";
 
 
 function App() {
@@ -38,7 +39,13 @@ function App() {
                 </Container>
             </Navbar>
 
+
+
             <main>
+
+                <div className="container my-3">
+                    <Banner/>
+                </div>
                 <div className="container py-4">
                     <header className="pb-3 mb-4 border-bottom">
                         <a href="/" className="d-flex align-items-center text-dark text-decoration-none">
@@ -91,9 +98,7 @@ function App() {
                     </footer>
                 </div>
 
-                <Button variant="primary" onClick={handleShow}>
-                    Launch demo modal
-                </Button>
+
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
