@@ -5,6 +5,8 @@ import './assets/css/App.css';
 // Images
 import Logo from './assets/images/logo.svg'
 import Banner from "./common/components/Banner";
+import Slider from "./common/components/Slider";
+import Intro from "./common/components/Intro";
 
 
 function App() {
@@ -14,10 +16,10 @@ function App() {
     return (
         <div className="App">
 
-            <Navbar className="fixed-top" bg="light" expand="lg">
+            <Navbar className="fixed-top" bg="dark" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img width="60px" className="img-fluid" src={Logo} alt=""/>
+                        <img width="80px" className="img-fluid" src={Logo} alt=""/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -40,11 +42,11 @@ function App() {
             </Navbar>
 
 
-
             <main>
 
                 <div className="container my-3">
-                    <Banner/>
+                    <Slider/>
+                    <Intro/>
                 </div>
                 <div className="container py-4">
                     <header className="pb-3 mb-4 border-bottom">
@@ -97,7 +99,6 @@ function App() {
                         &copy; 2021
                     </footer>
                 </div>
-
 
 
                 <Modal show={show} onHide={handleClose}>

@@ -1,5 +1,173 @@
 /*
 import Bootstrap 5.0.2
  */
-
+$body-bg:                   #000000;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+/*============================
+           Slider Parts
+   ============================*/
+.ins-main-slider-area {
+  min-height: 55vh;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ins-main-slider-images {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5%, rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0.5%, rgba(0, 0, 0, 0.1) 30%);
+  }
+}
+
+
+/*============================
+            Intro Area
+   ============================*/
+.ins-intro-area {
+  background-image: url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  padding-bottom: 175px;
+  @media all and (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+}
+
+.ins-intro-main {
+  display: flex;
+  justify-content: space-between;
+  @media all and (max-width: 1260px) {
+    flex-wrap: wrap;
+  }
+
+  .ins-intro-single {
+    margin-bottom: 40px;
+    @media all and (max-width: 1260px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .ins-intro-single + .ins-intro-single {
+    margin-left: 60px;
+    @media all and (max-width: 1260px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+.ins-main-intro-header {
+  max-width: 800px;
+  padding: 15px;
+  margin: auto auto 52px;
+
+  h1 {
+    margin-bottom: 52px;
+  }
+
+  p {
+    max-width: 670px;
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.8em;
+    margin: auto auto 0;
+    font-weight: normal;
+  }
+}
+
+
+.ins-intro-single {
+  background-color: #0b0b0b;
+  border-radius: 10px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  &:hover {
+    > img {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+  }
+
+  .ins-intro-meta {
+    transition: all 0.4s ease-in-out;
+    border: 2px solid #1c1c1c;
+    padding: 70px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @media all and (max-width: 600px) {
+      padding: 30px 15px;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+    }
+
+    ul {
+      display: block;
+      margin: 45px 0;
+      padding-left: 15px;
+
+      li {
+        text-align: left;
+        color: #cccccc;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+
+
+  }
+}
+
+
+//Hover For Cards
+.ins-intro-single {
+  transition: transform 0.5s;
+}
+
+.ins-intro-single::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  content: "";
+  opacity: 0;
+  z-index: -1;
+}
+
+.ins-intro-single:hover, .ins-intro-single:focus {
+  transform: scale3d(1.006, 1.006, 1);
+}
+
+.ins-intro-single:hover::after, .ins-intro-single:focus::after {
+  opacity: 1;
+}
+
