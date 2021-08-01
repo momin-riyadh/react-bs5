@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Navbar, Container, Nav, NavDropdown, Modal, Button} from "react-bootstrap";
 import './assets/css/App.css';
 
