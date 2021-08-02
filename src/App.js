@@ -9,6 +9,8 @@ import Slider from "./common/components/Slider";
 import Intro from "./common/components/Intro";
 import Team from "./common/components/Team";
 
+import InterviewCard from "./common/components/InterviewCard";
+
 
 function App() {
     const [show, setShow] = useState(false);
@@ -43,11 +45,38 @@ function App() {
             </Navbar>
 
 
-
-
             <Slider/>
             <Intro/>
             <Team/>
+
+            <div className="container">
+
+                <div className="row">
+                    <div className="col-md-8 mx-auto">
+                        <InterviewCard
+                            question="lorem ipsum dolor sit amet"
+                            answer="lorem ipsum dolor sit amet"
+                        />
+
+                        <InterviewCard
+                            question="lorem ipsum dolor sit amet"
+                            answer="lorem ipsum dolor sit amet"
+                        />
+
+                        <InterviewCard
+                            question="lorem ipsum dolor sit amet"
+                            answer="lorem ipsum dolor sit amet"
+                        />
+
+                        <InterviewCard
+                            question="lorem ipsum dolor sit amet"
+                            answer="lorem ipsum dolor sit amet"
+                        />
+                    </div>
+                </div>
+
+
+            </div>
 
 
         </div>
