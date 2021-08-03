@@ -12,14 +12,14 @@ class ConditionalRendering extends React.Component {
     render() {
         let wordDisplay;
         if (this.state.isLoggedIn) {
-            wordDisplay = "in"
+            wordDisplay = "In"
         } else {
-            wordDisplay = "out"
+            wordDisplay = "Out"
         }
         return (
             <div className="card mb-5">
                 <div className="card-body">
-                    <p style={{color: "#000000", fontSize: "20px", margin:0}}>Now you are Logged {wordDisplay}</p>
+                    <p style={{color: "#000000", fontSize: "20px", margin:0}}>Now you are <em>Logged</em> {wordDisplay}</p>
                 </div>
             </div>
 
