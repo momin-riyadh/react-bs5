@@ -2,8 +2,8 @@ import React from "react";
 
 
 class ConditionalRendering extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             isLoggedIn: true,
             count: 0,
@@ -14,12 +14,19 @@ class ConditionalRendering extends React.Component {
     }
 
     componentDidMount() {
-
-        setInterval(() => {
-            this.setState({
-                timeNow: new Date()
-            })
+        this.clockTimer = setInterval(() => {
+            this.clock()
         }, 1000)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.clockTimer)
+    }
+
+    clock() {
+        this.setState({
+            timeNow: new Date()
+        })
     }
 
 
