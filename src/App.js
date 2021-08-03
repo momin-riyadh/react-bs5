@@ -9,13 +9,26 @@ import Slider from "./common/components/Slider";
 import Intro from "./common/components/Intro";
 import Team from "./common/components/Team";
 
+// Components
 import InterviewCard from "./common/components/InterviewCard";
+// Data
+import interviewData from "./common/components/interviewData";
 
 
 function App() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+
+   const interviewComponents = interviewData.map(function (interview){
+        return (
+            <InterviewCard key ={interview.id} question ={interview.question}  answer={interview.answer}/>
+        )
+    })
+
+
+
     return (
         <div className="App">
 
@@ -53,25 +66,7 @@ function App() {
 
                 <div className="row">
                     <div className="col-md-8 mx-auto">
-                        <InterviewCard
-                            question="lorem ipsum dolor sit amet"
-                            answer="lorem ipsum dolor sit amet"
-                        />
-
-                        <InterviewCard
-                            question="lorem ipsum dolor sit amet"
-                            answer="lorem ipsum dolor sit amet"
-                        />
-
-                        <InterviewCard
-                            question="lorem ipsum dolor sit amet"
-                            answer="lorem ipsum dolor sit amet"
-                        />
-
-                        <InterviewCard
-                            question="lorem ipsum dolor sit amet"
-                            answer="lorem ipsum dolor sit amet"
-                        />
+                        {interviewComponents}
                     </div>
                 </div>
 
