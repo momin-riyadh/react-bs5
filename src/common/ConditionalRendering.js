@@ -17,9 +17,9 @@ class ConditionalRendering extends React.Component {
             wordDisplay = "out"
         }
         return (
-            <div className="card">
+            <div className="card mb-5">
                 <div className="card-body">
-                    <p style={{color: "#000000", fontSize: "20px"}}>Now you are Logged {wordDisplay}</p>
+                    <p style={{color: "#000000", fontSize: "20px", margin:0}}>Now you are Logged {wordDisplay}</p>
                 </div>
             </div>
 
