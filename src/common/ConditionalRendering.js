@@ -7,9 +7,19 @@ class ConditionalRendering extends React.Component {
         this.state = {
             isLoggedIn: true,
             count: 0,
+            timeNow: new Date()
         }
 
         this.handleClick = this.handleClick.bind(this);
+    }
+
+    componentDidMount() {
+
+        setInterval(() => {
+            this.setState({
+                timeNow: new Date()
+            })
+        }, 1000)
     }
 
 
@@ -40,6 +50,10 @@ class ConditionalRendering extends React.Component {
                 <div className="card-footer text-center">
                     <h1 style={{color: "coral"}}>{this.state.count}</h1>
                     <button className="btn btn-lg btn-outline-danger" onClick={this.handleClick}>Update!</button>
+                </div>
+
+                <div className="card-footer text-center">
+                    <h1 style={{color: "#000000"}}>{this.state.timeNow.toLocaleTimeString(this.props.locale)}</h1>
                 </div>
             </div>
 
