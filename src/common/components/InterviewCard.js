@@ -6,7 +6,7 @@ function InterviewCard(props) {
     return (
         <div className="card mb-2">
             <div className="card-body">
-                <h4 style={{color: props.question ? "#8c8c8c" : "initial"}}>
+                <h4 className={props.question ? "d-card-title" : "d-none"}>
                     <BsFillCircleFill style={{color: "red"}}/>
                     { props.question}
                 </h4>
