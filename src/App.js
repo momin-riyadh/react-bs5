@@ -8,6 +8,7 @@ import Banner from "./common/components/Banner";
 import Slider from "./common/components/Slider";
 import Intro from "./common/components/Intro";
 import Team from "./common/components/Team";
+import ConditionalRendering from "./common/ConditionalRendering";
 
 // Components
 import InterviewCard from "./common/components/InterviewCard";
@@ -21,12 +22,11 @@ function App() {
     const handleShow = () => setShow(true);
 
 
-   const interviewComponents = interviewData.map(function (interview){
+    const interviewComponents = interviewData.map(function (interview) {
         return (
-            <InterviewCard key ={interview.id} question ={interview.question}  answer={interview.answer}/>
+            <InterviewCard key={interview.id} question={interview.question} answer={interview.answer}/>
         )
     })
-
 
 
     return (
@@ -67,6 +67,12 @@ function App() {
                 <div className="row">
                     <div className="col-md-8 mx-auto">
                         {interviewComponents}
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-8 mx-auto">
+                        <ConditionalRendering/>
                     </div>
                 </div>
 
