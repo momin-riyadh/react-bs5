@@ -16,8 +16,8 @@ function About() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link to="/">Home</Nav.Link>
-                            <Nav.Link to="/about">About Us</Nav.Link>
+                            <Nav.Link as={Link} to="/">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                             <Nav.Link href="#link">Services</Nav.Link>
                             <Nav.Link href="#link">Products</Nav.Link>
                             <Nav.Link href="#link">Contact</Nav.Link>

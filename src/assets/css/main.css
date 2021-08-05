@@ -10756,6 +10756,10 @@ textarea.form-control-lg {
 /*
 *For Project
 */
+body {
+  padding-top: 80px;
+}
+
 /*================================
       Common Parts for Project
   ================================*/
