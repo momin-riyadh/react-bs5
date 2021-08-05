@@ -17,6 +17,7 @@ import InterviewCard from "./common/components/InterviewCard";
 import interviewData from "./common/components/interviewData";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
 
                 <Route path="/about">
                     <About/>
+                </Route>
+
+                <Route path="/Contact">
+                    <Contact/>
                 </Route>
             </Switch>
         </Router>

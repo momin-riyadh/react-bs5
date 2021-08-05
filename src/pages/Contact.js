@@ -3,7 +3,7 @@ import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import Logo from "../assets/images/logo.svg";
 
-function About() {
+function Contact() {
     return (
         <div>
             <Navbar className="fixed-top" bg="dark" expand="lg">
@@ -36,7 +36,7 @@ function About() {
                 <div className="container">
                     <div className="col-lg-10 mx-auto">
                         <div className="text-center">
-                            <h1>About Us</h1>
+                            <h1>Contact</h1>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi, architecto asperiores
                             aspernatur atque consequatur culpa cum cumque dolore error exercitationem in maxime, nemo
@@ -58,4 +58,4 @@ function About() {
     )
 }
 
-export default About;
+export default Contact;
