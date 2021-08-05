@@ -41,7 +41,7 @@ class ConditionalRendering extends React.Component {
 
     render() {
         let wordDisplay;
-        if (this.state.isLoggedIn) {
+        if (this.setState.isLoggedIn) {
             wordDisplay = "In"
         } else {
             wordDisplay = "Out"

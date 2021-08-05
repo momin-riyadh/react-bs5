@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Navbar, Container, Nav, NavDropdown, Modal, Button} from "react-bootstrap";
+import {BrowserRouter as Router} from 'react-router-dom';
 import './assets/css/App.css';
 
 // Images
